@@ -86,8 +86,6 @@ lda1 <- function(value, data) {
   subout <- subout[, order(subout[2,])]
   rownames(subout) <- c("priors", "averages")
   out <- list(subout, out, var)
-  return(subout)
+  return(out)
 }
 lda1(seq(7, 12, length=10), X)
-
-
