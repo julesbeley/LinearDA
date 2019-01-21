@@ -23,7 +23,7 @@ lda1 <- function(value, data) {
   var <- sum(wei)
   for (i in (1:n_cla)) {
     for (j in (1:len)) {
-      dis[j, i] <- value[j] * (mu[i] / var ^ 2) - (mu[i] ^ 2) / (2 * var ^ 2) + log(pi[i])
+      dis[j, i] <- value[j] * (mu[i] / var) - (mu[i] ^ 2) / (2 * var) + log(pi[i])
       exp[j, i] <- exp(dis[j, i])
     }
   }
