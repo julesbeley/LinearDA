@@ -106,4 +106,3 @@ lda1 <- function(value, data) {
   return(out)
 }
 lda1(1.2, X)
-
