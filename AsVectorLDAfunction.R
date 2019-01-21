@@ -1,10 +1,3 @@
-rm(list = ls())
-X1 <- data.frame(t = rnorm(4000, mean = 3, sd = 3), class = "red")
-X2 <- data.frame(t = rnorm(2000, mean = 6, sd = 2), class = "blue")
-X3 <- data.frame(t = rnorm(10000, mean = 15, sd = 2), class = "green")
-X4 <- data.frame(t = rnorm(7000, mean = -2, sd = 2.5), class = "orange")
-X <- rbind(X1, X2, X3, X4)
-
 lda1 <- function(value, data) {
   if (is.numeric(data[, 1]) == TRUE) {
     names(data) <- c("x", "class")
